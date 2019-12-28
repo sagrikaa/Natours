@@ -52,6 +52,8 @@ position: absolute;
 left:50%;
 top:40%;
 transform: translate(-50%,-50%);
+text-align: center;
+backface-visibility: hidden;
 }
 
 .primary-heading{
@@ -64,6 +66,8 @@ transform: translate(-50%,-50%);
     font-weight: 400;
     font-size: 60px;
     letter-spacing: 35px;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
 }
 
 
@@ -72,4 +76,117 @@ transform: translate(-50%,-50%);
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 17.5px;
+    animation-name: moveInRight;
+    animation-duration: 5s;
 }
+
+@keyframes moveInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+
+    }
+    50%{
+        opacity:1;
+        transform: translateX(10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+
+        
+    }
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+
+    }
+    50%{
+        opacity:1;
+        transform: translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+
+        
+    }
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+
+    }
+    
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+
+        
+    }
+}
+
+.btn:link, .btn:visited{
+
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 60px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    position: relative;
+    
+    
+
+}
+.btn:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.5);
+
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.7);
+
+}
+
+.btn-white{
+    background-color: #fff;
+    color:#777
+}
+
+btn-animated{
+    animation: moveInBottom 2s;
+
+}
+
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute; 
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: all .4s;
+    }
+    
+    .btn-white::after{
+        color: #fff
+    }
+    
+    .btn:hover::after{
+        transform: scale(2);
+        opacity: 0;
+    }
