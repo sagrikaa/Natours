@@ -38,6 +38,10 @@
         }
     }
 
+    &-green {
+        background-color: $color-primary;
+        color: $color-white;
+    }
 
     &-animated {
         animation: moveInBottom 2s;

@@ -152,6 +152,10 @@ body {
   .btn-white::after {
     color: #fff; }
 
+.btn-green {
+  background-color: #55c57a;
+  color: #fff; }
+
 .btn-animated {
   animation: moveInBottom 2s; }
 
@@ -230,8 +234,7 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 40rem;
-  text-align: center; }
+  height: 50rem; }
   .card-side {
     font-size: 2rem;
     border-radius: .3rem;
@@ -242,7 +245,8 @@ body {
     top: 0;
     left: 0;
     backface-visibility: hidden;
-    transition: all 2s ease; }
+    transition: all 2s ease;
+    overflow: hidden; }
     .card-side__front {
       background-color: #fff; }
     .card-side__back {
@@ -268,6 +272,53 @@ body {
       background-image: linear-gradient(#7ed56f, #28b485), url("/img/nat-6.jpg"); }
     .card_picture--3 {
       background-image: linear-gradient(#2998ff, #5643fa), url("/img/nat-7.jpg"); }
+  .card-heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 15rem;
+    right: 3rem;
+    width: 75%;
+    text-align: right; }
+  .card-heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card-heading-span--1 {
+      background-image: linear-gradient(rgba(255, 185, 0, 0.7), rgba(255, 119, 48, 0.7)); }
+    .card-heading-span--2 {
+      background-image: linear-gradient(rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)); }
+    .card-heading-span--3 {
+      background-image: linear-gradient(rgba(41, 152, 255, 0.7), rgba(86, 67, 250, 0.7)); }
+  .card-details {
+    text-align: center;
+    padding: 3rem 0; }
+    .card-details ul {
+      list-style: none;
+      font-size: 1.7rem;
+      width: 70%;
+      margin: auto; }
+    .card-details li {
+      padding: .7rem 0; }
+      .card-details li:not(:last-child) {
+        border-bottom: 1.2px solid #eee; }
+  .card_cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    color: #fff; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .row {
   max-width: 115rem;

@@ -3,8 +3,7 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height: 40rem;
-    text-align: center;
+    height: 50rem;
 
 
     &-side {
@@ -18,6 +17,7 @@
         left: 0;
         backface-visibility: hidden;
         transition: all 2s ease;
+        overflow: hidden;
 
         &__front {
             background-color: $color-white;
@@ -60,7 +60,6 @@
         height: 23rem;
         clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 85%, 0 100%);
 
-
         &--1 {
             background-image: linear-gradient($color-secondary-light, $color-secondary-dark), url('/img/nat-5.jpg');
         }
@@ -74,6 +73,87 @@
             background-image: linear-gradient($color-tertiary-light, $color-tertiary-dark), url('/img/nat-7.jpg');
 
         }
+    }
+
+    &-heading {
+        font-size: 2.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        position: absolute;
+        top: 15rem;
+        right: 3rem;
+        width: 75%;
+        text-align: right;
+    }
+
+    &-heading-span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(rgba($color-secondary-light, .7), rgba($color-secondary-dark, .7));
+
+        }
+
+        &--2 {
+            background-image: linear-gradient(rgba($color-primary-light, .7), rgba($color-primary-dark, .7));
+
+        }
+
+        &--3 {
+            background-image: linear-gradient(rgba($color-tertiary-light, .7), rgba($color-tertiary-dark, .7));
+
+        }
+    }
+
+    &-details {
+        text-align: center;
+        padding: 3rem 0;
+
+        ul {
+            list-style: none;
+            font-size: 1.7rem;
+            width: 70%;
+            margin: auto;
+
+        }
+
+        li {
+            padding: .7rem 0;
+
+            &:not(:last-child) {
+
+                border-bottom: 1.2px solid $color-light-grey-2;
+            }
+        }
+
+
+    }
+
+    &_cta {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+
+
+    &__price-box {
+        color: $color-white;
+    }
+
+    &__price-only {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size: 6rem;
+        font-weight: 100;
     }
 
 }
