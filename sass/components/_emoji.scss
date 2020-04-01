@@ -1,0 +1,32 @@
+.emoji-box {
+    width: 20rem;
+    height: 20rem;
+    background-color: #FFDA6A;
+    clip-path: circle(50%);
+    margin: auto;
+    position: relative;
+}
+
+.eye {
+    // width: 4rem;
+    // height: 4rem;
+    // top: 5.5rem;
+    // position: absolute;
+    // clip-path: circle(50% at 50% 50%);
+    // background-color: black;
+    left: calc(50% - 3px);
+    top: 30px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: transparent;
+    box-shadow: -6px 0 0 0 black, -36px 0 0 0px black, 6px 0 0 0 black, 36px 0 0 0px black;
+}
+
+.left-eye {
+    left: 3.5rem;
+}
+
+.right-eye {
+    right: 3.5rem;
+}
