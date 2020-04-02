@@ -42,27 +42,6 @@ body {
   padding: 2rem;
   box-sizing: border-box; }
 
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
-  background-size: cover;
-  background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  position: relative; }
-  .header .logo-box {
-    position: absolute;
-    left: 4rem;
-    top: 4rem; }
-  .header .logo {
-    height: 3.5rem; }
-  .header .text-box {
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    backface-visibility: hidden; }
-
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -133,7 +112,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   margin: 6rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 4rem;
   border-radius: 5rem;
   transition: all 0.3s;
   position: relative;
@@ -475,6 +454,42 @@ body {
 .form_radio-input:checked ~ .form_radio-label .form_radio-button::after {
   opacity: 1; }
 
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.6rem;
+  color: #f7f7f7; }
+  .footer_logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+  .footer_logo {
+    width: 15rem;
+    height: auto; }
+  .footer_navigation {
+    display: inline-block;
+    border-top: 0.1rem solid #eee;
+    padding: 1rem; }
+  .footer_list {
+    list-style: none; }
+  .footer_item {
+    display: inline-block;
+    margin: 1rem; }
+  .footer_link, .footer_link:link, .footer_link:visited {
+    display: inline-block;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase; }
+  .footer_link:hover, .footer_link:active {
+    background-color: #333;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.03);
+    color: #55c57a; }
+  .footer_copyright {
+    display: inline-block;
+    border-top: 0.1rem solid #eee;
+    padding: 1rem; }
+
 .row {
   max-width: 115rem;
   margin: 0 auto; }
@@ -506,6 +521,27 @@ body {
   .row .col-3-of-4 {
     width: calc(3* (100% - 3 * 6rem)/4 + 2 * 6rem);
     float: left; }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative; }
+  .header .logo-box {
+    position: absolute;
+    left: 4rem;
+    top: 4rem; }
+  .header .logo {
+    height: 3.5rem; }
+  .header .text-box {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backface-visibility: hidden; }
 
 .section-about {
   margin-top: -20vh;
@@ -545,4 +581,4 @@ body {
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.5); }
   .book__form {
     width: 50%;
-    padding: 5rem; }
+    padding: 4rem; }
