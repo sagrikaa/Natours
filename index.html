@@ -15,53 +15,35 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation_checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation_button"><span class="navigation_icon">&nbsp; </span></label>
+        <div class="navigation_background">
+            &nbsp;
+        </div>
+        <nav class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="123" class="navigation_link">About Us </a></li>
+                <li class="navigation_item"><a href="#" class="navigation_link">Why choose us?</a></li>
+                <li class="navigation_item"><a href="#" class="navigation_link">Popular Tours</a></li>
+                <li class="navigation_item"><a href="#" class="navigation_link">Stories</a></li>
+                <li class="navigation_item"><a href="#" class="navigation_link">Book Now</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
         <div class="logo-box">
             <img src="img/logo-white.png" alt="Logo" class="logo">
         </div>
-        <div class="text-box">
-            <h1 class="primary-heading">
+        <div class="text-box ">
+            <h1 class="primary-heading u-mb-medium">
                 <span class="primary-heading-main">Outdoors</span>
                 <span class="primary-heading-sub">is where life happens</span>
             </h1>
 
-            <a href="#" class="btn btn-white btn-animated">Discover our tours</a>
+            <a href="#" class="btn btn-white btn-animated ">Discover our tours</a>
         </div>
     </header>
-    <!-- <section>
-        
-        <div class="row">
-            <div class="col-1-of-2">1/2 column</div>
-            <div class="col-1-of-2">1/2 column</div>
-        </div>
-        <div class="row">
-            <div class="col-1-of-3">1/3 column</div>
-            <div class="col-1-of-3">1/3 column</div>
-            <div class="col-1-of-3">1/3 column</div>
-        </div>
-        <div class="row">
-            <div class="col-2-of-3">2/3 column</div>
-            <div class="col-1-of-3">1/3 column</div>
-        </div>
-        <div class="row">
-            <div class="col-1-of-4">1/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-        </div>
-        <div class="row">
-            <div class="col-2-of-4">2/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-
-        </div>
-        <div class="row">
-            <div class="col-3-of-4">3/4 column</div>
-            <div class="col-1-of-4">1/4 column</div>
-
-        </div>
-    </section> -->
-
     <main>
         <section class="section-about">
             <div class="u-text-center u-mb-big">
@@ -173,7 +155,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$297</p>
                                 </div>
-                                <a href="#" class="btn btn-white">Book Now!</a>
+                                <a href="#popup" class="btn btn-white">Book Now!</a>
 
                             </div>
 
@@ -204,7 +186,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$547</p>
                                 </div>
-                                <a href="#" class="btn btn-white">Book Now!</a>
+                                <a href="#popup" class="btn btn-white">Book Now!</a>
 
                             </div>
                         </div>
@@ -233,7 +215,7 @@
                                     <p class="card__price-only">only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="#" class="btn btn-white">Book Now!</a>
+                                <a href="#popup" class="btn btn-white">Book Now!</a>
 
                             </div>
                         </div>
@@ -294,7 +276,7 @@
                 <a href="#" class="btn-text">Read More &rarr;</a>
             </div>
         </section>
-        <section class="section-book">
+        <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
@@ -360,18 +342,74 @@
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup_content">
+            <div class="popup_left-col">
+                <img src="./img/nat-8.jpg" alt="img-1" class="popup_img">
+                <img src="./img/nat-9.jpg" alt="img-1" class="popup_img">
+            </div>
+            <div class="popup_right-col">
+                <a href="#section_tours" class="popup_close">&times;</a>
+                <h2 class="secondary-heading u-mb-medium">Start your journey</h2>
+                <h3 class="tertiary-heading u-mb-small"> Terms and conditions </h3>
+                <p class="popup_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellat quo esse
+                    excepturi, eaque dolor cupiditate culpa est, non sed illo impedit ad sapiente sequi vel eius
+                    doloremque reprehenderit dolorum?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+                    itaque ipsum, modi asperiores nam hic? Molestias, eum saepe. Inventore, ad nobis explicabo
+                    temporibus et recusandae quia. Illum totam blanditiis voluptates?</p>
+
+                <a href="#section-book" class="btn btn-green">Book Now!</a>
+
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
+<!-- <section>
+        
+        <div class="row">
+            <div class="col-1-of-2">1/2 column</div>
+            <div class="col-1-of-2">1/2 column</div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-3">1/3 column</div>
+            <div class="col-1-of-3">1/3 column</div>
+            <div class="col-1-of-3">1/3 column</div>
+        </div>
+        <div class="row">
+            <div class="col-2-of-3">2/3 column</div>
+            <div class="col-1-of-3">1/3 column</div>
+        </div>
+        <div class="row">
+            <div class="col-1-of-4">1/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
+        </div>
+        <div class="row">
+            <div class="col-2-of-4">2/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
 
-<!-- <section class="section-emoji">
-            <div class="row">
-                <div class="u-text-center u-mt-huge">
-                    <div class="emoji-box">
-                        <div class="eye left-eye"></div>
-                        <div class="eye right-eye"></div>
+        </div>
+        <div class="row">
+            <div class="col-3-of-4">3/4 column</div>
+            <div class="col-1-of-4">1/4 column</div>
 
-                    </div>
+        </div>
+    </section> -->
+<!-- 
+    <section class="section-emoji">
+        <div class="row">
+            <div class="u-text-center u-mt-huge">
+                <div class="emoji-box">
+                    <div class="eye left-eye"></div>
+                    <div class="eye right-eye"></div>
+
                 </div>
             </div>
-        </section> -->
+        </div>
+    </section> 
+-->
