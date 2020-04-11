@@ -4,7 +4,6 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: $color-grey;
-    padding: 2rem;
 
 }
 
@@ -20,6 +19,17 @@ body {
         letter-spacing: 3.5rem;
         animation-name: moveInLeft;
         animation-duration: 5s;
+
+        @include respond(tab-port) {
+            letter-spacing: 2rem;
+
+        }
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 4rem;
+
+        }
     }
 
 
@@ -30,6 +40,14 @@ body {
         letter-spacing: 1.75rem;
         animation-name: moveInRight;
         animation-duration: 5s;
+
+        @include respond(tab-port) {
+            letter-spacing: 1rem;
+        }
+
+        @include respond(phone) {
+            letter-spacing: 1rem;
+        }
     }
 }
 
@@ -44,9 +62,17 @@ body {
     color: transparent;
     transition: all .2s;
 
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+
     &:hover {
         transform: skewX(20deg) skewY(2deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+
+        @include respond(tab-port) {
+            transform: skewX(10deg) skewY(1.75deg) scale(1.1);
+        }
     }
 }
 
@@ -54,12 +80,26 @@ body {
     font-size: 1.6rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }
 
 .paragraph {
     font-size: 1.6rem;
 
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
+
     &:not(:last-child) {
         margin-bottom: 3rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 2rem;
+        }
     }
+
+
 }

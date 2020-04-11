@@ -5,3 +5,54 @@
         clear: both;
     }
 }
+
+
+//Media Query Manager
+/*
+ -----------------------------------------------------------------------------
+|Screen size      |          Screen type                    |   Argument      |
+|0-600px          |              Phone                      |   phone         |
+|600-900px        |          Tablet Portrait                |   tab-port      |
+|900-1200px       |          Tablet landscape               |   tab-land      |
+|1200-1800px      |  Our Current setting(Computer screens)  |      -          |
+|>1800px          |          Big Screens                    |   big-screen    |
+ -----------------------------------------------------------------------------
+*/
+
+// 1em =    16px
+
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media (max-width:37.5em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width:56.25em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width:75em) {
+            @content
+        }
+
+        ;
+    }
+
+    @if $breakpoint==big-screen {
+        @media (min-width:112.5em) {
+            @content
+        }
+
+        ;
+    }
+
+
+}
