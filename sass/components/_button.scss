@@ -13,6 +13,10 @@
         position: relative;
         border: none;
         cursor: pointer;
+
+        @include respond(phone) {
+            margin: 2rem;
+        }
     }
 
     &:hover {
