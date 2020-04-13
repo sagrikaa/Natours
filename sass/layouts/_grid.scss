@@ -1,3 +1,7 @@
+@include respond(tab-land) {
+    $gutter-horizontal: 4rem !important;
+}
+
 .row {
     max-width: $grid-width;
     // background-color: #eee;
