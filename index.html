@@ -319,7 +319,11 @@
     </main>
     <footer class="footer">
         <div class="footer_logo-box">
-            <img src="/img/logo-green-2x.png" alt="Full Logo" class="footer_logo">
+            <picture class="footer_logo">
+                <source srcset="/img/logo-green-small-1x.png 1x,/img/logo-green-small-2x.png 2x"
+                    media="(max-width:37.5em)">
+                <img srcset="/img/logo-green-1x.png 1x,/img/logo-green-2x.png 2x" alt="Full Logo">
+            </picture>
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -336,8 +340,9 @@
             <div class="col-1-of-2">
                 <p class="footer_copyright">
                     Built by <a href="#" class="footer_link">&nbsp;Sagrika Aggarwal&nbsp;</a>Design Copyright &copy;
-                    by <a href="#" class="footer_link">&nbsp;John Schedtmann&nbsp;</a> as part of his amazing online CSS
-                    course.
+                    by <a href="#" class="footer_link">&nbsp;John Schedtmann&nbsp;</a> as part of his amazing online <a
+                        href="https://www.udemy.com/course/advanced-css-and-sass/" class="footer_link"> Advanced CSS &
+                        Sass course</a>
                 </p>
             </div>
         </div>
